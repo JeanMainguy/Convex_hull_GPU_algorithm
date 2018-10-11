@@ -52,12 +52,16 @@ First let considered the retrieval of the extreme right pixel. To do so the righ
 
 * The current pixel is on top of the line: the current extreme pixel is unchanged (Fig  \ref{extrem1} & \ref{extrem3}).
 
-![The current extreme right pixel is above the line joining the current pixel and the new extreme pixel. Consequently the current extreme pixel remain unchanged and the algorithm checks the next column.    .\label{extrem1}](extrem1.png "ext1")
+![The current extreme right pixel is above the line joining the current pixel and the new extreme pixel. Consequently the current extreme pixel remain unchanged and the algorithm checks the next column.    .\label{extrem1}](report/extrem1.png "ext1")
+> The current extreme right pixel is above the line joining the current pixel and the new extreme pixel. Consequently the current extreme pixel remain unchanged and the algorithm checks the next column. 
 
-![The current extreme right pixel is below the line joining the current pixel and the new extreme pixel. consequently the extreme pixel of the column +4 become the current pixel. Then the algorithm checks the next column. \label{extrem2}](extrem2.png "ext2")
 
+![The current extreme right pixel is below the line joining the current pixel and the new extreme pixel. consequently the extreme pixel of the column +4 become the current pixel. Then the algorithm checks the next column. \label{extrem2}](report/extrem2.png "ext2")
+> The current extreme right pixel is below the line joining the current pixel and the new extreme pixel. consequently the extreme pixel of the column +4 become the current pixel. Then the algorithm checks the next column.
 
-![The current extreme right pixel is above the line joining the current pixel and the new extreme pixel of column +5, consequently the current extreme pixel does not change. Then the algorithm checks the last column. \label{extrem3}](extrem3.png "ext3")
+![The current extreme right pixel is above the line joining the current pixel and the new extreme pixel of column +5, consequently the current extreme pixel does not change. Then the algorithm checks the last column. \label{extrem3}](report/extrem3.png "ext3")
+> The current extreme right pixel is above the line joining the current pixel and the new extreme pixel of column +5, consequently the current extreme pixel does not change. Then the algorithm checks the last column.
+
 
 The next columns is checked, a new extreme pixel is found and it visibility is checked. This process is repeated for each columns until there is no pixel of the particle found in the columns. This process is performed on the right and on the left of the current pixel in order to have an extreme pixel from the left part and an extreme pixel from the right part.
 
@@ -73,7 +77,7 @@ The position of the current pixel regarding the line between the left and right 
 
 
 ![The current pixel in green is above the line joining the right and left extrem pixel. The angle between the current pixel and the two extrem ones is then convex, and consequently the current pixel is a vertex of the hull.  .\label{currentIsVertex}](report/IsCurrentAVertex.png "figure")  
-
+> The current pixel in green is above the line joining the right and left extrem pixel. The angle between the current pixel and the two extrem ones is then convex, and consequently the current pixel is a vertex of the hull. 
 
 In the case where the current pixel has no neighbor pixel on one side, the pixel is immediately considered as a vertex.
 
@@ -84,7 +88,7 @@ At the end, the algorithm has checked every pixel from the top and the bottom bo
 
 
 ![Result image of the algorithm, all the vertex of the convex hull have been found and displayed in a specific color.\label{allvertex}](report/ALlvertex.png)  
-
+> Result image of the algorithm, all the vertex of the convex hull have been found and displayed in a specific color
 
 
 ### Benchmark
@@ -98,9 +102,6 @@ of Ram, using Firefox browser for the GPU benchmark.
 
 
 
-![Image used to performed the benchmark .\label{bench}](imageBenchmarkIMJ/particle1.jpg)  
-
-
 
 ## Results
 
@@ -110,7 +111,7 @@ The execution times increase proportionally to the size of the image while with 
 
 
 ![Result of the benchmark test for ImageJ (blue) and GPU (red) algorithms. The image size doubles at every iteration. \label{imagejB}](report/graph final.png "benchmarkIJ.png" )
-
+> Result of the benchmark test for ImageJ (blue) and GPU (red) algorithms. The image size doubles at every iteration.
 
 <!-- ![Execution time compared to different image size for our three algorithms. At each iteration the image increases by the size of the initial image.\label{linear}](/home/jean/Documents/MasterBioinfo/M2/Bio_structural/rapport2/algos.png "algos.png") -->
 
