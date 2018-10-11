@@ -53,7 +53,7 @@ First let considered the retrieval of the extreme right pixel. To do so the righ
 * The current pixel is on top of the line: the current extreme pixel is unchanged (Fig  \ref{extrem1} & \ref{extrem3}).
 
 ![The current extreme right pixel is above the line joining the current pixel and the new extreme pixel. Consequently the current extreme pixel remain unchanged and the algorithm checks the next column.    .\label{extrem1}](report/extrem1.png "ext1")
-> The current extreme right pixel is above the line joining the current pixel and the new extreme pixel. Consequently the current extreme pixel remain unchanged and the algorithm checks the next column. 
+> The current extreme right pixel is above the line joining the current pixel and the new extreme pixel. Consequently the current extreme pixel remain unchanged and the algorithm checks the next column.
 
 
 ![The current extreme right pixel is below the line joining the current pixel and the new extreme pixel. consequently the extreme pixel of the column +4 become the current pixel. Then the algorithm checks the next column. \label{extrem2}](report/extrem2.png "ext2")
@@ -77,7 +77,7 @@ The position of the current pixel regarding the line between the left and right 
 
 
 ![The current pixel in green is above the line joining the right and left extrem pixel. The angle between the current pixel and the two extrem ones is then convex, and consequently the current pixel is a vertex of the hull.  .\label{currentIsVertex}](report/IsCurrentAVertex.png "figure")  
-> The current pixel in green is above the line joining the right and left extrem pixel. The angle between the current pixel and the two extrem ones is then convex, and consequently the current pixel is a vertex of the hull. 
+> The current pixel in green is above the line joining the right and left extrem pixel. The angle between the current pixel and the two extrem ones is then convex, and consequently the current pixel is a vertex of the hull.
 
 In the case where the current pixel has no neighbor pixel on one side, the pixel is immediately considered as a vertex.
 
@@ -109,7 +109,7 @@ The results for the ImageJ algorithm are shown below in Fig. \ref{imagejB}. For 
 
 The execution times increase proportionally to the size of the image while with the GPU algorithm remain stable around 130 ms.  
 
-![Result of the benchmark test for ImageJ (blue) and GPU (red) algorithms. The image size doubles at every iteration. \label{imagejB}](report/graph final.png "benchmarkIJ.png" )
+![Result of the benchmark test for ImageJ (blue) and GPU (red) algorithms. The image size doubles at every iteration. \label{imagejB}](report/graph_final.png "benchmarkIJ.png" )
 
 > Result of the benchmark test for ImageJ (blue) and GPU (red) algorithms. The image size doubles at every iteration.
 
