@@ -1,6 +1,5 @@
-﻿# Analysis Particles: Convex Hull
 
-
+# Analysis Particles: Convex Hull
 
 Jean Mainguy
 
@@ -73,7 +72,7 @@ The position of the current pixel regarding the line between the left and right 
 * The current pixel is above the line: the pixel is a convex hull's vertex and is colored (Fig \ref{currentIsVertex}).
 
 
-![The current pixel in green is above the line joining the right and left extrem pixel. The angle between the current pixel and the two extrem ones is then convex, and consequently the current pixel is a vertex of the hull.  .\label{currentIsVertex}](IsCurrentAVertex.png "figure")  
+![The current pixel in green is above the line joining the right and left extrem pixel. The angle between the current pixel and the two extrem ones is then convex, and consequently the current pixel is a vertex of the hull.  .\label{currentIsVertex}](report/IsCurrentAVertex.png "figure")  
 
 
 In the case where the current pixel has no neighbor pixel on one side, the pixel is immediately considered as a vertex.
@@ -84,7 +83,7 @@ At the end, the algorithm has checked every pixel from the top and the bottom bo
 
 
 
-![Result image of the algorithm, all the vertex of the convex hull have been found and displayed in a specific color.\label{allvertex}](./ALlvertex.png)  
+![Result image of the algorithm, all the vertex of the convex hull have been found and displayed in a specific color.\label{allvertex}](report/ALlvertex.png)  
 
 
 
@@ -99,7 +98,7 @@ of Ram, using Firefox browser for the GPU benchmark.
 
 
 
-![Image used to performed the benchmark .\label{bench}](../imageBenchmarkIMJ/particle1.jpg)  
+![Image used to performed the benchmark .\label{bench}](imageBenchmarkIMJ/particle1.jpg)  
 
 
 
@@ -110,7 +109,7 @@ The results for the ImageJ algorithm are shown below in Fig. \ref{imagejB}. For 
 The execution times increase proportionally to the size of the image while with the GPU algorithm remain stable around 130 ms.  
 
 
-![Result of the benchmark test for ImageJ (blue) and GPU (red) algorithms. The image size doubles at every iteration. \label{imagejB}](/home/jean/Documents/MasterBioinfo/M2/Bio_structural/RapportGPU/graph final.png "benchmarkIJ.png" )
+![Result of the benchmark test for ImageJ (blue) and GPU (red) algorithms. The image size doubles at every iteration. \label{imagejB}](report/graph final.png "benchmarkIJ.png" )
 
 
 <!-- ![Execution time compared to different image size for our three algorithms. At each iteration the image increases by the size of the initial image.\label{linear}](/home/jean/Documents/MasterBioinfo/M2/Bio_structural/rapport2/algos.png "algos.png") -->
