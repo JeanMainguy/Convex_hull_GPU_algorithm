@@ -1,0 +1,1 @@
+../TINY/samples/text_30x33x10.js

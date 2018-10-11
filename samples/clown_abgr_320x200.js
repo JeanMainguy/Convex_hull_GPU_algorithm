@@ -1,0 +1,1 @@
+../TINY/samples/clown_abgr_320x200.js
