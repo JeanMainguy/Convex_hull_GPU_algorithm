@@ -109,8 +109,8 @@ The results for the ImageJ algorithm are shown below in Fig. \ref{imagejB}. For 
 
 The execution times increase proportionally to the size of the image while with the GPU algorithm remain stable around 130 ms.  
 
-
 ![Result of the benchmark test for ImageJ (blue) and GPU (red) algorithms. The image size doubles at every iteration. \label{imagejB}](report/graph final.png "benchmarkIJ.png" )
+
 > Result of the benchmark test for ImageJ (blue) and GPU (red) algorithms. The image size doubles at every iteration.
 
 <!-- ![Execution time compared to different image size for our three algorithms. At each iteration the image increases by the size of the initial image.\label{linear}](/home/jean/Documents/MasterBioinfo/M2/Bio_structural/rapport2/algos.png "algos.png") -->
